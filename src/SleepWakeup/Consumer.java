@@ -1,3 +1,5 @@
+package SleepWakeup;
+
 public class Consumer extends Thread {
     private String name;
 
@@ -6,7 +8,7 @@ public class Consumer extends Thread {
     }
 
     public void print () {
-        //System.out.println("-------------\n" + this.name + "\nProducts: " + Main.getProducts() + "\n-------------");
+        //System.out.println("-------------\n" + this.name + "\nProducts: " + SleepWakeup.Main.getProducts() + "\n-------------");
     }
 
     @Override
