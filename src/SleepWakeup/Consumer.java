@@ -23,7 +23,7 @@ public class Consumer extends Thread {
                 try {
                     System.out.println(this.name + " - Sleeping\nProducts:" + Main.products);
                     this.sleep(5000);
-                    start  = System.currentTimeMillis();
+                    start = System.currentTimeMillis();
                 } catch (InterruptedException e) {
 
                 }
@@ -48,5 +48,6 @@ public class Consumer extends Thread {
                 }
             }
         }
+        Main.consumersList.remove(this);
     }
 }

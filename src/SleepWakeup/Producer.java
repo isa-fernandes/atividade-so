@@ -49,5 +49,6 @@ public class Producer extends Thread {
                 }
             }
         }
+        Main.producersList.remove(this);
     }
 }

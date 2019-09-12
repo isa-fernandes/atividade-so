@@ -1,13 +1,9 @@
 package WrittenAlternation;
 
-import java.util.ArrayList;
-
 public class Main {
-    static boolean isDivide; //if true is divide turn
-    static ArrayList<Multiply> multiplyList = new ArrayList<>();
-    static ArrayList<Divide> divideList = new ArrayList<>();
+    static boolean isDivide = false; //if true is divide turn
     static double integer = 100000;
-    final static int quant = 15;//2000000;
+    final static int quant = 2000000;
 
     public static void write (double s) {
         integer = s;
@@ -15,12 +11,17 @@ public class Main {
 
     public static void main (String[] args) {
         Multiply multiply1 = new Multiply("Multiplica Um");
-        multiplyList.add(multiply1);
+        Multiply multiply2 = new Multiply("Multiplica Dois");
+        Multiply multiply3 = new Multiply("Multiplica Três");
 
         Divide divide1 = new Divide("Divide Um");
-        divideList.add(divide1);
+        Divide divide2 = new Divide("Divide Dois");
 
+        multiply1.start();
         divide1.start();
+        multiply2.start();
+        divide2.start();
+        multiply3.start();
 
     }
 }
